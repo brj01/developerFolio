@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Fade } from "react-reveal";
-import emoji from "react-easy-emoji";
+// emoji helper removed — strings contain no emoji characters
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";

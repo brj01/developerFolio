@@ -44,6 +44,10 @@
   background-color: $gitlab;
 }
 
+.pinterest i {
+  background-color: #E60023;
+}
+
 .google i {
   background-color: $google;
 }
@@ -66,6 +70,10 @@
 
 .instagram i {
   background-color: $instagram;
+}
+
+.pinterest i:hover {
+  background-color: $textColor;
 }
 
 /* Hover Transition */

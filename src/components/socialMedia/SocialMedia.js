@@ -44,29 +44,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.gitlab ? (
-        <a
-          href={socialMediaLinks.gitlab}
-          className="icon-button gitlab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-gitlab"></i>
-          <span></span>
-        </a>
-      ) : null}
-
-      {socialMediaLinks.facebook ? (
-        <a
-          href={socialMediaLinks.facebook}
-          className="icon-button facebook"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-facebook-f"></i>
-          <span></span>
-        </a>
-      ) : null}
 
       {socialMediaLinks.instagram ? (
         <a
@@ -92,26 +69,14 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.medium ? (
+      {socialMediaLinks.pinterest ? (
         <a
-          href={socialMediaLinks.medium}
-          className="icon-button medium"
+          href={socialMediaLinks.pinterest}
+          className="icon-button pinterest"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-medium"></i>
-          <span></span>
-        </a>
-      ) : null}
-
-      {socialMediaLinks.stackoverflow ? (
-        <a
-          href={socialMediaLinks.stackoverflow}
-          className="icon-button stack-overflow"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-stack-overflow"></i>
+          <i className="fab fa-pinterest-p"></i>
           <span></span>
         </a>
       ) : null}
