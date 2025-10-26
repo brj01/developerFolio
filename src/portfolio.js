@@ -84,7 +84,8 @@ const educationInfo = {
 
 // Tech Stack
 const techStack = {
-  viewSkillBars: true,
+  // Disable the skill/proficiency bars in the UI
+  viewSkillBars: false,
   experience: [
     { Stack: "Frontend/Design", progressPercentage: "85%" },
     { Stack: "Backend & Cloud", progressPercentage: "80%" },
