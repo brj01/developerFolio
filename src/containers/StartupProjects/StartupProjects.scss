@@ -1,16 +1,19 @@
 @import "../../_globalColor";
+@import "../../theme";
 
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 220px;
+  border-radius: 10px;
 }
 .card-title {
-  color: $titleColor;
-  font-size: 22px;
+  color: $db-coyote-brown;
+  font-size: 20px;
   line-height: 24px;
+  font-family: $db-heading-font;
   font-weight: 700;
-  margin: 15px 0 0 0;
+  margin: 12px 0 0 0;
 }
 .card-subtitle {
   color: $cardSubtitle;
@@ -20,42 +23,27 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  @extend .db-card;
+  padding: 1rem;
+  border-radius: $db-radius;
   justify-content: center;
 }
-.project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
+.project-card { transition: transform 0.34s cubic-bezier(.2,.8,.2,1), box-shadow 0.34s; }
 
 .project-detail {
   text-align: center;
 }
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
-}
+.project-card:hover { transform: translateY(-6px) scale(1.01); box-shadow: $db-shadow-warm; }
 .project-image {
   position: relative;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.4), rgba(166,119,101,0.02));
 }
 
 .projects-container {
@@ -65,8 +53,8 @@
 }
 
 .project-card-footer span.project-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
+  background: $db-blast-off-bronze;
+  color: $db-offwhite;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
@@ -81,6 +69,10 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
+
+.project-modal-overlay { position: fixed; inset:0; display:flex; align-items:center; justify-content:center; background: rgba(12,8,6,0.46); z-index:9000; }
+.project-modal { width: min(820px, 96%); border-radius: 14px; padding: 1rem; background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(246,243,238,0.94)); box-shadow: $db-shadow-warm; backdrop-filter: blur(6px); }
+
 
 @media (max-width: 768px) {
   .project-subtitle {
