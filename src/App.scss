@@ -1,5 +1,22 @@
 @import "./globalColor";
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* pushes footer down if content is short */
+}
+
+
 .App {
   text-align: center;
   width: 100%;
