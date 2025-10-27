@@ -1,5 +1,13 @@
 @import "../../_globalColor";
 
+.projects-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  align-items: flex-start;
+}
+
 .card-image {
   max-width: 100%;
   height: auto;
@@ -16,6 +24,11 @@
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+}
+.project-subtitle {
+  font-size: clamp(1rem, 2.1vw, 1.35rem);
+  margin: 0;
+  max-width: 680px;
 }
 .project-card {
   display: flex;
@@ -41,7 +54,10 @@
 }
 
 .project-detail {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
@@ -59,9 +75,10 @@
 }
 
 .projects-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  gap: 1.5rem;
 }
 
 .project-card-footer span.project-tag {
@@ -87,5 +104,7 @@
     font-size: 16px;
     text-align: center;
   }
+  .projects-container {
+    gap: 1.5rem;
+  }
 }
-

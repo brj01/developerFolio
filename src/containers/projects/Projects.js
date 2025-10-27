@@ -46,25 +46,40 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
+          <div className="project-wrapper">
+            <div className="section-header">
+              <h1 className="project-title">Open Source Projects</h1>
+              {openSource.subtitle && (
+                <p
+                  className={
+                    isDark
+                      ? "dark-mode subTitle project-subtitle"
+                      : "subTitle project-subtitle"
+                  }
+                >
+                  {openSource.subtitle}
+                </p>
+              )}
+            </div>
+            <div className="repo-cards-div-main">
+              {repo.map((v, i) => {
+                if (!v) {
+                  console.error(
+                    `Github Object for repository number : ${i} is undefined`
+                  );
+                }
+                return (
+                  <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
                 );
-              }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
+              })}
+            </div>
+            <Button
+              text={"More Projects"}
+              className="project-button"
+              href={socialMediaLinks.github}
+              newTab={true}
+            />
           </div>
-          <Button
-            text={"More Projects"}
-            className="project-button"
-            href={socialMediaLinks.github}
-            newTab={true}
-          />
         </div>
       </Suspense>
     );

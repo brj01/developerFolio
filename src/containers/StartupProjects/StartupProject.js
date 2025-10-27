@@ -20,17 +20,19 @@ export default function StartupProject() {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
-        <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p
-            className={
-              isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
-            }
-          >
-            {bigProjects.subtitle}
-          </p>
+        <div className="projects-wrapper">
+          <div className="section-header">
+            <h1 className="skills-heading">{bigProjects.title}</h1>
+            <p
+              className={
+                isDark
+                  ? "dark-mode project-subtitle"
+                  : "subTitle project-subtitle"
+              }
+            >
+              {bigProjects.subtitle}
+            </p>
+          </div>
 
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {

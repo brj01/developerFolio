@@ -1,127 +1,99 @@
 @import "../../_globalColor";
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  width: min(90%, 1100px);
+  padding: 64px 0 48px;
+  margin: 0 auto;
 }
 
 .greeting-main {
+  width: 100%;
+}
+
+.greeting-content {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-align: left;
 }
 
-.subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
+.greeting-text-flex {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+.profile-avatar {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(122, 0, 0, 0.15);
+  box-shadow: 0 16px 42px rgba(122, 0, 0, 0.18);
+  flex-shrink: 0;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.greeting-text {
+  flex: 1 1 320px;
+  min-width: 280px;
+  font-size: clamp(1.7rem, 3.2vw, 2.2rem);
+  line-height: 1.2;
+  color: $buttonColor !important;
+  margin: 0;
+}
+
+.greeting-text-p {
+  font-size: clamp(0.95rem, 2vw, 1.35rem);
+  line-height: 1.6;
+  max-width: 760px;
+  margin: 0;
+}
+
+.greeting-social {
+  margin-top: 1rem;
 }
 
 .empty-div {
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
 
 .button-greeting-div {
   display: flex;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
 }
+
 .download-link-button {
   text-decoration: none;
 }
 
-.greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
-}
-
-.greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
-}
-
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
-}
-
-.wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
-}
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .greet-main {
+    padding: 48px 0 32px;
+  }
+  .greeting-text-flex {
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
   }
   .greeting-text {
-    font-size: 30px;
     text-align: center;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
-  }
-}
-
-@media (max-width: 320px) {
-  .main {
-    width: auto;
+  .profile-avatar {
+    width: 112px;
+    height: 112px;
   }
 }

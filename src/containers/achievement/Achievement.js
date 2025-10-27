@@ -13,7 +13,7 @@ export default function Achievement() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">
         <div className="achievement-main-div">
-          <div className="achievement-header">
+          <div className="achievement-header section-header">
             <h1
               className={
                 isDark
