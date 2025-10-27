@@ -212,13 +212,13 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/Screenshot 2025-09-09 170239.png"),
-      projectName: "TyebeTyebak",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Saayahealth",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://www.tyebetyebak.org/"
+          url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
       ]
