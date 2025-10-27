@@ -49,8 +49,9 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  /* slightly reduced so the title remains more prominent */
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .greeting-image-div > img {
@@ -96,7 +97,7 @@
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -108,7 +109,7 @@
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal;
     text-align: center;
   }
