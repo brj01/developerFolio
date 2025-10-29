@@ -122,17 +122,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "American University of Beirut",
-      logo: require("./assets/images/harvardLogo1.png"),
-      subHeader: "Business Administration and Computer Science Double Major ",
-      duration: "September 2023 - June 2027",
-      
+      schoolName: "Harvard University",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Master of Science in Computer Science",
+      duration: "September 2017 - April 2019",
+      desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
-        "Finance Concentration  ",
-        "Minor in Philosophy and Mathematics",
-        "Dean’s Honor List in Fall 2024-2025(3.7) and Spring 2024-2025(4.0)",
-        "Exchange Program at the American University of Cairo in Fall 2025-2026 "
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
+    },
+    {
+      schoolName: "Stanford University",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "September 2013 - April 2017",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -174,7 +180,8 @@ const workExperiences = {
         "Supported the Ministry of Interior in strategic planning and digital transformation for the 2026 parliamentary elections.",
         "Researched and documented electoral law procedures, recommending policy and process improvements.",
         "Evaluated and fine-tuned offline LLMs (Qwen 30B, GPT-oss20B) to ensure accuracy and minimal hallucination in official government queries.",
-        "Developed agentic video understanding pipelines that answer detailed questions about recorded incidents and procedures."
+        "Developed agentic video understanding pipelines that answer detailed questions about recorded incidents and procedures.",
+        "Delivered a fully functioning agentic chatbot workflow prepared for integration into the MoIM's official website."
       ]
     },
     {

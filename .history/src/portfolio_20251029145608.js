@@ -122,16 +122,14 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "American University of Beirut",
+      schoolName: "Harvard University",
       logo: require("./assets/images/harvardLogo1.png"),
       subHeader: "Business Administration and Computer Science Double Major ",
       duration: "September 2023 - June 2027",
-      
+      desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
-        "Finance Concentration  ",
-        "Minor in Philosophy and Mathematics",
-        "Dean’s Honor List in Fall 2024-2025(3.7) and Spring 2024-2025(4.0)",
-        "Exchange Program at the American University of Cairo in Fall 2025-2026 "
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     }
   ]

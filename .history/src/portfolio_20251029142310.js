@@ -1,4 +1,4 @@
-﻿/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
@@ -123,16 +123,25 @@ const educationInfo = {
   schools: [
     {
       schoolName: "American University of Beirut",
-      logo: require("./assets/images/harvardLogo1.png"),
-      subHeader: "Business Administration and Computer Science Double Major ",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Double Major in Computer Science and Finance",
       duration: "September 2023 - June 2027",
       
       descBullets: [
-        "Finance Concentration  ",
-        "Minor in Philosophy and Mathematics",
+        "Finance Concentration",
+        "Minor in Philosophy and Mathematics ",
         "Dean’s Honor List in Fall 2024-2025(3.7) and Spring 2024-2025(4.0)",
         "Exchange Program at the American University of Cairo in Fall 2025-2026 "
+
       ]
+    },
+    {
+      schoolName: "Stanford University",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "September 2013 - April 2017",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -164,36 +173,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Consulting Intern",
-      company: "Siren Associates, Beirut, Lebanon",
-      companylogo: require("./assets/images/download (26).jpeg"),
-      date: "June 2025 - September 2025",
-      desc: "Worked across the Ministry of Interior AI RAG Chatbot Team and the Parliamentary Election Consultation Team.",
+      role: "Software Engineer",
+      company: "Facebook",
+      companylogo: require("./assets/images/facebookLogo.png"),
+      date: "June 2018 ??? Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Conducted feasibility and budget studies for voting megacenters and Out-of-Country Voting (OCV).",
-        "Supported the Ministry of Interior in strategic planning and digital transformation for the 2026 parliamentary elections.",
-        "Researched and documented electoral law procedures, recommending policy and process improvements.",
-        "Evaluated and fine-tuned offline LLMs (Qwen 30B, GPT-oss20B) to ensure accuracy and minimal hallucination in official government queries.",
-        "Developed agentic video understanding pipelines that answer detailed questions about recorded incidents and procedures."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
-      role: "Legal Intern",
-      company: "Eptalex: Aziz Torbey Law Firm, Beirut, Lebanon",
-      companylogo: require("./assets/images/download (1).png"),
-      date: "January 2025 - February 2025",
-      desc: "Supported transactional and corporate engagements through due diligence, contract analysis, and regulatory research.",
-      descBullets: [
-        "Conducted due diligence for M&A and corporate transactions, reviewing financial statements, shareholder agreements, and corporate records to evaluate deal structures and compliance.",
-        "Analyzed distribution, licensing, and commercial contracts to confirm obligations, mitigate risk, and support dispute resolution.",
-        "Researched corporate and cross-border regulatory frameworks, delivering legal and financial insights to strengthen governance and inform client decisions."
-      ]
+      role: "Front-End Developer",
+      company: "Quora",
+      companylogo: require("./assets/images/quoraLogo.png"),
+      date: "May 2017 ??? May 2018",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Software Engineer Intern",
       company: "Airbnb",
       companylogo: "",
-      date: "January 2015 - September 2015",
+      date: "Jan 2015 ??? Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -234,13 +235,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Kingdom Of A Goddess.jpeg"),
       projectName: "Afterthoughts",
-      projectRole: "Full-Stack Developer",
-      projectDesc:
-        "Philosophy journal platform with rich editorial tooling and intelligent assistance.",
-      projectDescBullets: [
-        "Built user profiles, article submissions, and event pages with sentiment analysis, AI summarization, and plagiarism detection to support the editorial workflow.",
-        "Developed an embedding-based recommendation engine using Hugging Face models with cosine similarity, delivering end-to-end features across HTML, CSS, JavaScript, Node.js, Express, and MongoDB."
-      ],
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
           name: "Visit Website",
@@ -383,4 +378,3 @@ export {
   isHireable,
   resumeSection
 };
-

@@ -16,10 +16,10 @@ export default function WorkExperience() {
               <h1 className="experience-heading">Experiences</h1>
             </div>
             <div className="experience-cards-div">
-              {workExperiences.experience.map((card, i) => {
-                return (
+              {workExperiences.experience.map((card, i) => (
+                <div className="experience-item" key={i}>
+                  <span className="experience-item__marker" aria-hidden="true"></span>
                   <ExperienceCard
-                    key={i}
                     isDark={isDark}
                     cardInfo={{
                       company: card.company,
@@ -30,8 +30,8 @@ export default function WorkExperience() {
                       descBullets: card.descBullets
                     }}
                   />
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
         </Fade>

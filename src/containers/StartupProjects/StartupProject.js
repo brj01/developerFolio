@@ -168,9 +168,9 @@ function openUrlInNewTab(url) {
                 className="project-modal__close"
                 onClick={closeProjectDetails}
                 aria-label="Close project details"
-              >
-                ×
-              </button>
+                >
+                  {"\u00D7"}
+                </button>
               <div className="project-modal__header">
                 {selectedProject.image && (
                   <div className="project-modal__image">
