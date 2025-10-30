@@ -1,4 +1,4 @@
-﻿/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
@@ -51,10 +51,10 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    "Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-    "Progressive Web Applications ( PWA ) in normal and SPA Stacks",
-    "Integration of third party services such as Firebase/ AWS / Digital Ocean"
-  ],
+    "Agentic AI solutions, data pipelines, and cloud-native services built with Angular, Spring Boot, React, Node.js, Express, and AWS.",
+    "Technical Skills: Power BI, MongoDB, SQL, Python, Java, C/C++, MATLAB, R, LaTeX, OpenCV, MediaPipe, Hugging Face, AutoCAD, QGIS, Agisoft Metashape, HTML, CSS.",
+    "Soft Skills: Leadership, Research and Analysis, Communication and Editorial excellence, Problem-Solving, Innovation mindset.",
+    "Languages: Arabic (Native); English (Fluent); German (A2); French (Beginner)."],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -130,42 +130,19 @@ const educationInfo = {
       descBullets: [
         "Finance Concentration  ",
         "Minor in Philosophy and Mathematics",
-        "Dean’s Honor List in Fall 2024-2025(3.7) and Spring 2024-2025(4.0)",
+        "Dean's Honor List in Fall 2024-2025(3.7) and Spring 2024-2025(4.0)",
         "Exchange Program at the American University of Cairo in Fall 2025-2026 "
       ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: false, // proficiency section removed
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Consulting Intern",
-      company: "Siren Associates, Beirut, Lebanon",
+      company: "Siren Associates | Beirut,Lebanon",
       companylogo: require("./assets/images/download (26).jpeg"),
       date: "June 2025 - September 2025",
       desc: "Worked across the Ministry of Interior AI RAG Chatbot Team and the Parliamentary Election Consultation Team.",
@@ -179,7 +156,7 @@ const workExperiences = {
     },
     {
       role: "Legal Intern",
-      company: "Eptalex: Aziz Torbey Law Firm, Beirut, Lebanon",
+      company: "Eptalex: Aziz Torbey Law Firm | Beirut,Lebanon",
       companylogo: require("./assets/images/download (1).png"),
       date: "January 2025 - February 2025",
       desc: "Supported transactional and corporate engagements through due diligence, contract analysis, and regulatory research.",
@@ -190,11 +167,41 @@ const workExperiences = {
       ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      skillName: "Power BI",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      role: "Environmental Modelling Research Intern",
+      company: "Columbia Climate School | Remote",
+       companylogo: require("./assets/images/download (2).png"),
+
+      date: "December 2024- Present",
+      descBullets: [
+        "Used Python, MATLAB, and finite difference methods to solve numerical equations for drought modelling. ",
+        "Applied data assimilation and Bayesian statistics to integrate observational data into vegetation models. ",
+        "Conducted research with Dr. Mazen Nakad through Kaffi, collaborating with a field team gathering drought-related data. "
+      ]
+    },
+    {
+      role: "Administrative Intern",
+      company: "Rusted Radishes | Beirut, Lebanon",
+      companylogo: require("./assets/images/download (3).png"),
+      date: "September 2024 - September 2025",
+      desc: "Streamlined administrative and finance operations for a literary and arts magazine.",
+      descBullets: [
+        "Managed financial and sales records, including POS operations, revenue tracking, and invoice preparation.",
+        "Developed a database and automated administrative workflows, improving reporting efficiency and record accuracy."
+      ]
+    },
+    {
+      role: "Private Legal Translation Assistance",
+      company: "Freelance | Beirut & GCC Clients",
       companylogo: "",
-      date: "January 2015 - September 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "2021 - 2023",
+      descBullets: [
+        "Translated legal documents between English and Arabic, covering Articles of Association, Memoranda of Agreement and Understanding, NDAs, advisory contracts, distribution and commercial agreements, joint venture and retail agreements, and support or legal service contracts.",
+        "Delivered accurate, context-aware translations for international and regional clients across Saudi Arabia, Bahrain, and Kuwait, ensuring alignment with local legal terminology and compliance requirements."
+      ]
     }
   ]
 };
@@ -250,6 +257,60 @@ const bigProjects = {
     }
   ],
   display: true // Set false to hide this section, defaults to true
+};
+
+const extracurricularSection = {
+  title: "Extracurricular Activities",
+  subtitle:
+    "Leadership across student media, societies, and community service throughout AUB.",
+    activities: [
+    {
+      title: "Editor-in-Chief",
+      organization: "OSB Review | AUB",
+      period: "May 2025 - Present"
+    },
+    {
+      title: "Residence Editor",
+      organization: "Watchdogs Gazette | AUB",
+      period: "January 2025 - Present"
+    },
+    {
+      title: "Secretary",
+      organization: "Philosophy Student Society | AUB",
+      period: "2024 - Present"
+    },
+    {
+      title: "Title IX Committee Member",
+      organization: "AUB",
+      period: "2023 - Present"
+    },
+    {
+      title: "Associate Event Manager",
+      organization: "Computer Science Student Society | AUB",
+      period: "2024 - 2025"
+    },
+    {
+      title: "Treasurer",
+      organization: "English Student Society | AUB",
+      period: "2024 - 2025"
+    },
+    {
+      title: "Treasurer",
+      organization: "Dead Poets Society | AUB",
+      period: "2024 - 2025"
+    },
+    {
+      title: "Volunteer",
+      organization: "Haven (Children's Cancer Center) | AUB",
+      period: "2023 - 2025"
+    },
+    {
+      title: "Staff Writer",
+      organization: "Outlook Newspaper | AUB",
+      period: "2023 - 2025"
+    }
+  ],
+  display: true // Set false to hide this section
 };
 
 // Achievement Section
@@ -322,16 +383,16 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://sites.aub.edu.lb/outlook/2024/01/08/under-the-digital-panopticon-exploring-activism-in-an-era-of-surveillance/",
+      title: "Under the Digital Panopticon",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Exploring how activists navigate modern surveillance, safeguard movements, and reclaim digital agency."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://sites.aub.edu.lb/outlook/2024/07/08/secrecy-upon-our-grave/",
+      title: "Secrecy Upon Our Grave",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "A reflection on collective memory, grief, and resilience through the stories we choose to protect or reveal."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -372,10 +433,11 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
+
   workExperiences,
   openSource,
   bigProjects,
+  extracurricularSection,
   achievementSection,
   blogSection,
   contactInfo,
@@ -383,4 +445,23 @@ export {
   isHireable,
   resumeSection
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

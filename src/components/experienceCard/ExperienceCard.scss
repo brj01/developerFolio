@@ -63,7 +63,7 @@
   gap: 0.35rem;
 }
 
-.experience-card__company {
+.experience-card__role {
   margin: 0;
   font-size: clamp(1.25rem, 2.4vw, 1.5rem);
   font-weight: 700;
@@ -71,15 +71,19 @@
   color: $titleColor;
 }
 
-.experience-card--dark .experience-card__company {
+.experience-card--dark .experience-card__role {
   color: $textColorDark;
 }
 
-.experience-card__role {
+.experience-card__company {
   margin: 0;
   font-size: clamp(1rem, 2vw, 1.1rem);
   font-weight: 600;
-  color: rgba(51, 53, 72, 0.85);
+  color: rgba(51, 53, 72, 0.8);
+}
+
+.experience-card--dark .experience-card__company {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .experience-card__date {
@@ -89,10 +93,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: rgba(71, 74, 92, 0.6);
-}
-
-.experience-card--dark .experience-card__role {
-  color: rgba(255, 255, 255, 0.82);
 }
 
 .experience-card--dark .experience-card__date {

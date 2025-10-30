@@ -31,9 +31,10 @@
 }
 
 .education-text-school {
-  margin: 0;
+  margin: 0 0 0.15rem;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 800;
+  color: $titleColor;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -50,23 +51,23 @@
 }
 
 .education-card-right {
-  max-width: 70%;
+  max-width: 75%;
 }
 
 .education-text-subHeader {
   color: $textColor;
   font-weight: 700;
   font-size: 19px;
-  margin: 0px;
-  padding-top: 0.8rem;
-  line-height: normal;
+  margin: 0 0 0.15rem;
+  padding-top: 0.25rem;
+  line-height: 1.35;
 }
 
 .education-text-duration {
   color: $titleColor;
   font-size: 19px;
   margin: 0px;
-  padding-top: 0.5rem;
+  padding-top: 0.35rem;
 }
 
 .education-text-desc {
@@ -92,7 +93,7 @@
     width: 90%;
   }
   .education-text-subHeader {
-    padding-top: 0.5rem;
+  padding-top: 0.35rem;
     font-size: 16px;
   }
   .education-text-school {
@@ -131,4 +132,7 @@
     max-width: 80%;
     margin: auto;
   }
+}
+.education-card--tight {
+  gap: 0.2rem;
 }

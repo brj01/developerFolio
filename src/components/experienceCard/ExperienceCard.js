@@ -18,8 +18,8 @@ export default function ExperienceCard({cardInfo, isDark}) {
           </div>
         )}
         <div className="experience-card__headline">
-          <h3 className="experience-card__company">{cardInfo.company}</h3>
-          <p className="experience-card__role">{cardInfo.role}</p>
+          <h3 className="experience-card__role">{cardInfo.role}</h3>
+          <p className="experience-card__company">{cardInfo.company}</p>
           <p className="experience-card__date">{cardInfo.date}</p>
         </div>
       </header>

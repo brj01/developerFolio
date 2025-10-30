@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useEffect, useRef, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -15,6 +15,7 @@ function openUrlInNewTab(url) {
 
   const {isDark} = useContext(StyleContext);
   const [selectedProject, setSelectedProject] = useState(null);
+  const modalRef = useRef(null);
 
   useEffect(() => {
     const handleEsc = event => {
@@ -36,18 +37,29 @@ function openUrlInNewTab(url) {
     };
   }, [selectedProject]);
 
+  useEffect(() => {
+    if (!selectedProject) {
+      return;
+    }
+
+    const handleClickOutside = event => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        closeProjectDetails();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [selectedProject]);
+
   const openProjectDetails = project => {
     setSelectedProject(project);
   };
 
   const closeProjectDetails = () => {
     setSelectedProject(null);
-  };
-
-  const handleBackdropClick = event => {
-    if (event.target === event.currentTarget) {
-      closeProjectDetails();
-    }
   };
 
   const handleKeyDown = (event, project) => {
@@ -152,7 +164,7 @@ function openUrlInNewTab(url) {
         {selectedProject && (
           <div
             className="project-modal"
-            onClick={handleBackdropClick}
+            onClick={closeProjectDetails}
             role="dialog"
             aria-modal="true"
           >
@@ -162,6 +174,8 @@ function openUrlInNewTab(url) {
                   ? "project-modal__card project-modal__card--dark"
                   : "project-modal__card"
               }
+              ref={modalRef}
+              onClick={event => event.stopPropagation()}
             >
               <button
                 type="button"
