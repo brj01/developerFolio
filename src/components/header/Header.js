@@ -10,7 +10,8 @@ import {
   extracurricularSection,
   blogSection,
   achievementSection,
-  educationInfo
+  educationInfo,
+  bigProjects
 } from "../../portfolio";
 
 function Header() {
@@ -21,6 +22,20 @@ function Header() {
   const viewExtracurricular = extracurricularSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
+  const viewBigProjects = bigProjects.display;
+
+  const navItems = [
+    viewEducation && {label: "Education", href: "#education"},
+
+    viewExperience && {label: "Experience", href: "#experience"},
+    viewExtracurricular && {label: "Extracurricular", href: "#extracurricular"},
+    viewBigProjects && {label: "Projects", href: "#projects"},
+
+      viewSkills && {label: "Skills", href: "#skills"},
+    viewAchievement && {label: "Achievements", href: "#achievements"},
+      
+    viewBlog && {label: "Articles", href: "#articles"}
+  ].filter(Boolean);
 
   return (
     <Headroom>
@@ -37,39 +52,11 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewEducation && (
-            <li>
-              <a href="#education">Education</a>
+          {navItems.map(item => (
+            <li key={item.href}>
+              <a href={item.href}>{item.label}</a>
             </li>
-          )}
-          {viewSkills && (
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-          )}
-          {viewExperience && (
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-          )}
-          {viewExtracurricular && (
-            <li>
-              <a href="#extracurricular">Extracurricular</a>
-            </li>
-          )}
-          {viewAchievement && (
-            <li>
-              <a href="#achievements">Achievements</a>
-            </li>
-          )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
+          ))}
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>

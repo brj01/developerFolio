@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "A Finance and Computer Science student with experience in consulting research, financial analysis, and market strategy. Skilled in combining analytical insight with technical tools to drive investment decision-making and client development.",
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/142hpjFc9209g3xJPW-J-BlUBCrZmriCr/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,7 +36,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/bareaa-joudi/",
   gmail: "brj01@mail.aub.edu",
   gitlab: "https://github.com/brj01",
-  pinterest: "https://www.pinterest.com/bareajoudi5/",
+  pinterest: "https://www.pinterest.com/bareajoudi5/_created",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -199,7 +199,7 @@ const workExperiences = {
     {
       role: "Legal Intern",
       company: "Eptalex: Aziz Torbey Law Firm | Beirut,Lebanon",
-      companylogo: require("./assets/images/download (1).png"),
+      companylogo: require("./assets/images/eptalex.png"),
       date: "January 2025 - February 2025",
       desc: "Supported transactional and corporate engagements through due diligence, contract analysis, and regulatory research.",
       descBullets: [
@@ -212,7 +212,7 @@ const workExperiences = {
     {
       role: "Environmental Modelling Research Intern",
       company: "Columbia Climate School | Remote",
-       companylogo: require("./assets/images/download (2).png"),
+       companylogo: require("./assets/images/columbia.jpg"),
 
       date: "December 2024- Present",
       descBullets: [
@@ -292,7 +292,23 @@ const bigProjects = {
           url: "https://husseinatoui.github.io/cmps271-frontend/"
         }
       ]
-    }
+    },{
+   
+      projectName: "Gesture-Based Interaction System ",
+      projectRole: "Computer Vision Developer ",
+      projectDesc:
+        "Gesture-Based Interaction System using MediaPipe and OpenCV",
+      projectDescBullets: [
+        "Built a real-time hand gesture control system with MediaPipe, OpenCV, and ArUco markers, featuring drawing, virtual piano, 3D mapping, and a lightsaber game. ",
+        "Implemented 3D pose estimation, camera calibration, and an interactive UI with dynamic gesture mapping for responsive control. "
+      ],
+      footerLink: [
+        {
+          name: "Visit Repository",
+          url: "https://github.com/DMAUB/final-project-team2-cursor"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
