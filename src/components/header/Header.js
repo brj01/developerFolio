@@ -34,7 +34,7 @@ function Header() {
       viewSkills && {label: "Skills", href: "#skills"},
     viewAchievement && {label: "Achievements", href: "#achievements"},
       
-    viewBlog && {label: "Articles", href: "#articles"}
+    viewBlog && {label: "Articles", href: "#blogs"}
   ].filter(Boolean);
 
   return (
@@ -59,9 +59,9 @@ function Header() {
           ))}
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+
+              {/* <ToggleSwitch /> */}
+
           </li>
         </ul>
       </header>

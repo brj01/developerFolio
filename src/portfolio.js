@@ -416,10 +416,10 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
+// Articles Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Articles",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
