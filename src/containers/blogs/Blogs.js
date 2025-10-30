@@ -52,13 +52,15 @@ export default function Blogs() {
       <div className="main" id="blogs">
         <div className="blog-header section-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
-          <p
-            className={
-              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
-            }
-          >
-            {blogSection.subtitle}
-          </p>
+          {blogSection.subtitle && (
+            <p
+              className={
+                isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
+              }
+            >
+              {blogSection.subtitle}
+            </p>
+          )}
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">

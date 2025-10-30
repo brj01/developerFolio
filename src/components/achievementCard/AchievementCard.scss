@@ -1,9 +1,12 @@
 @import "../../_globalColor";
 
 .card-image {
-  max-width: 100%;
+  max-width: clamp(140px, 70%, 220px);
+  max-height: 140px;
+  width: auto;
   height: auto;
-  width: 250px;
+  object-fit: contain;
+  display: block;
 }
 .card-title {
   color: $titleColor;
@@ -38,7 +41,8 @@
 }
 .certificate-image-div {
   position: relative;
-  height: 250px;
+  min-height: 120px;
+  padding: 0.75rem 0;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -48,6 +52,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
+  align-items: start;
 }
 .certificate-card-footer {
   display: flex;
@@ -63,12 +68,12 @@
   border-radius: 4px;
   display: inline-flex;
   font-size: 0.75rem;
-  height: 2em;
+  height: 2.25em;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
   margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  padding: 0 1.35em;
   cursor: pointer;
   transition: 0.2s ease-in;
 }

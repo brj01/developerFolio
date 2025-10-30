@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Bareaa Joudi",
-  title: "Hi all, I'm Bareaa!",
+  title: "Greetings, I'm Bareaa!",
   subTitle:
-    "A passionate Full Stack Software Developer having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.",
+    "A Finance and Computer Science student with experience in consulting research, financial analysis, and market strategy. Skilled in combining analytical insight with technical tools to drive investment decision-making and client development.",
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -32,14 +32,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  pinterest: "https://www.pinterest.com/yourusername",
+  github: "https://github.com/brj01",
+  linkedin: "https://www.linkedin.com/in/bareaa-joudi/",
+  gmail: "brj01@mail.aub.edu",
+  gitlab: "https://github.com/brj01",
+  pinterest: "https://www.pinterest.com/bareajoudi5/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -260,7 +257,6 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
       image: require("./assets/images/Screenshot 2025-09-09 170239.png"),
@@ -360,9 +356,6 @@ const extracurricularSection = {
 
 const achievementSection = {
   title: "Achievements And Certifications",
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
   achievementsCards: [
     {
       title: "Dean's Honor List",
@@ -393,8 +386,7 @@ const achievementSection = {
 
     {
       title: "Amazon University Engagement Industry Program 4.0",
-      subtitle:
-        "Completed the Amazon University Engagement Industry Program 4.0 in partnership with mentors from Amazon Women in Engineering Community ",
+      
       image: require("./assets/images/amazon.png"),
       imageAlt: "Amazon Logo",
       footerLink: [
@@ -412,8 +404,6 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -447,7 +437,7 @@ const contactInfo = {
   title: "Contact Me",
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+961 81 917 649 | +20 ",
+  number: "+961 81 917 649 | +20 121 274 2500",
   email_address: "bareajoudi@gmail.com"
 };
 

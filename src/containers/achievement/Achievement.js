@@ -23,15 +23,17 @@ export default function Achievement() {
             >
               {achievementSection.title}
             </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle achievement-subtitle"
-                  : "subTitle achievement-subtitle"
-              }
-            >
-              {achievementSection.subtitle}
-            </p>
+            {achievementSection.subtitle && (
+              <p
+                className={
+                  isDark
+                    ? "dark-mode subTitle achievement-subtitle"
+                    : "subTitle achievement-subtitle"
+                }
+              >
+                {achievementSection.subtitle}
+              </p>
+            )}
           </div>
           <div className="achievement-cards-div">
             {achievementSection.achievementsCards.map((card, i) => {
