@@ -48,13 +48,15 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "Skills",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     "Agentic AI solutions, data pipelines, and cloud-native services built with Angular, Spring Boot, React, Node.js, Express, and AWS.",
-    "Technical Skills: Power BI, MongoDB, SQL, Python, Java, C/C++, MATLAB, R, LaTeX, OpenCV, MediaPipe, Hugging Face, AutoCAD, QGIS, Agisoft Metashape, HTML, CSS.",
+    "Agentic AI solutions, Spring Boot, OpenCV, MediaPipe, AutoCAD, QGIS, Agisoft Metashape.",
     "Soft Skills: Leadership, Research and Analysis, Communication and Editorial excellence, Problem-Solving, Innovation mindset.",
-    "Languages: Arabic (Native); English (Fluent); German (A2); French (Beginner)."],
+    "Languages: Arabic (Native); English (Fluent); German (A2); French (Beginner).",
+    "Interests: Reading, Tennis, Chess, Philosophy."
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -68,10 +70,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -111,7 +110,35 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    },
+    {
+      skillName: "Power BI",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+      { skillName: "C/C++",
+    fontAwesomeClassname: "fas fa-code"
+}, {
+    skillName: "MATLAB",
+    fontAwesomeClassname: "fas fa-square-root-alt"
+  },{
+    skillName: "AutoCAD",
+    fontAwesomeClassname: "fas fa-drafting-compass"
+  },
+  {
+    skillName: "QGIS",
+    fontAwesomeClassname: "fas fa-map-marked-alt"
+  },
+  {
+    skillName: "R",
+    fontAwesomeClassname: "fab fa-r-project"
+  },
+  {
+    skillName: "MongoDB",
+    fontAwesomeClassname: "fas fa-leaf" // approximate since FA lacks MongoDB icon
+  },{
+  skillName: "LaTeX",
+  fontAwesomeClassname: "fas fa-file-code" // symbolic icon (no official FA icon)
+},
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -166,10 +193,7 @@ const workExperiences = {
         "Researched corporate and cross-border regulatory frameworks, delivering legal and financial insights to strengthen governance and inform client decisions."
       ]
     },
-    {
-      skillName: "Power BI",
-      fontAwesomeClassname: "fas fa-chart-line"
-    },
+
     {
       role: "Environmental Modelling Research Intern",
       company: "Columbia Climate School | Remote",
@@ -445,6 +469,11 @@ export {
   isHireable,
   resumeSection
 };
+
+
+
+
+
 
 
 
