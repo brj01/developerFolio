@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useRef, useState} from "react";
+import {createPortal} from "react-dom";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -76,7 +77,7 @@ function openUrlInNewTab(url) {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div className="projects-wrapper">
-          <div className="section-header">
+          <div className="section-header projects-header">
             <h1 className="skills-heading">{bigProjects.title}</h1>
             <p
               className={

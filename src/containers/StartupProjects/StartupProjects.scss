@@ -8,6 +8,14 @@
   align-items: flex-start;
 }
 
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+}
+
 .project-image {
   display: flex;
   justify-content: center;
@@ -38,6 +46,8 @@
   font-size: clamp(1rem, 2.1vw, 1.35rem);
   margin: 0;
   max-width: 680px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 .project-card {
   position: relative;
@@ -115,13 +125,13 @@
 .project-modal {
   position: fixed;
   inset: 0;
-  z-index: 1100;
+  z-index: 2100;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: clamp(1rem, 4vw, 2.5rem);
-  background: rgba(18, 18, 38, 0.25);
-  backdrop-filter: blur(2px);
+  background: transparent;
+  backdrop-filter: none;
   animation: modalFadeIn 0.25s ease;
 }
 

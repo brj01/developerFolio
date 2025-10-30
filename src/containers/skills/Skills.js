@@ -6,6 +6,13 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
+  const additionalSkillGroups =
+    (skillsSection.additionalSkillGroups &&
+      Array.isArray(skillsSection.additionalSkillGroups) &&
+      skillsSection.additionalSkillGroups.filter(
+        group => group && group.items && group.items.length > 0
+      )) ||
+    [];
   if (!skillsSection.display) {
     return null;
   }
@@ -29,20 +36,38 @@ export default function Skills() {
           </p>
         </div>
         <SoftwareSkill />
-        <div className="skills-copy">
-          {skillsSection.skills.map((skills, i) => (
-            <p
-              key={i}
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text"
-                  : "subTitle skills-text"
-              }
-            >
-              {skills}
-            </p>
-          ))}
-        </div>
+        {additionalSkillGroups.length > 0 && (
+          <div className="skills-copy">
+            {additionalSkillGroups.map((group, groupIndex) => (
+              <div className="skills-copy-group" key={group.title || groupIndex}>
+                {group.title && (
+                  <h3
+                    className={
+                      isDark
+                        ? "dark-mode skills-copy-heading"
+                        : "skills-copy-heading"
+                    }
+                  >
+                    {group.title}
+                  </h3>
+                )}
+                {group.items &&
+                  group.items.map((item, itemIndex) => (
+                    <p
+                      key={itemIndex}
+                      className={
+                        isDark
+                          ? "dark-mode subTitle skills-text"
+                          : "subTitle skills-text"
+                      }
+                    >
+                      {item}
+                    </p>
+                  ))}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

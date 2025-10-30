@@ -20,8 +20,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Hussein Atoui",
-  title: "Hi all, I'm Hussein!",
+  username: "Bareaa Joudi",
+  title: "Hi all, I'm Bareaa!",
   subTitle:
     "A passionate Full Stack Software Developer having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.",
   resumeLink:

@@ -1,4 +1,4 @@
-/* Change this file to get your personal Portfolio */
+﻿/* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
@@ -20,8 +20,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Hussein Atoui",
-  title: "Hi all, I'm Hussein!",
+  username: "Bareaa Joudi",
+  title: "Hi all, I'm Bareaa!",
   subTitle:
     "A passionate Full Stack Software Developer having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.",
   resumeLink:
@@ -49,15 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    "Agentic AI solutions, data pipelines, and cloud-native services built with Angular, Spring Boot, React, Node.js, Express, and AWS.",
-    "Agentic AI solutions, Spring Boot, OpenCV, MediaPipe, AutoCAD, QGIS, Agisoft Metashape.",
-    "Soft Skills: Leadership, Research and Analysis, Communication and Editorial excellence, Problem-Solving, Innovation mindset.",
-    "Languages: Arabic (Native); English (Fluent); German (A2); French (Beginner).",
-    "Interests: Reading, Tennis, Chess, Philosophy."
-  ],
-
+ 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
@@ -135,11 +127,37 @@ https://fontawesome.com/icons?d=gallery */
   {
     skillName: "MongoDB",
     fontAwesomeClassname: "fas fa-leaf" // approximate since FA lacks MongoDB icon
-  },{
-  skillName: "LaTeX",
-  fontAwesomeClassname: "fas fa-file-code" // symbolic icon (no official FA icon)
-},
+  },
+  {
+    skillName: "LaTeX",
+    fontAwesomeClassname: "fas fa-file-code" // symbolic icon (no official FA icon)
+  }
   ],
+  additionalSkillGroups: [
+    {
+      title: "Additional Skills",
+      items: [
+        "Agentic AI solutions, OpenCV, MediaPipe, AutoCAD, QGIS, Agisoft Metashape."
+      ]
+    },
+    {
+      title: "Soft Skills",
+      items: [
+        "Leadership, Research and Analysis, Communication and Editorial excellence, Problem-Solving, Innovation mindset."
+      ]
+    },
+    {
+      title: "Languages",
+      items: [
+        "Arabic (Native); English (Fluent); German (A2); French (Beginner)."
+      ]
+    },
+    {
+      title: "Interests",
+      items: ["Reading, Tennis, Chess, Philosophy."]
+    }
+  ],
+  
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -347,50 +365,42 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Dean's Honor List",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Fall Term 24-25",
+             image: require("./assets/images/aub.png"),
+      imageAlt: "AUB Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://drive.google.com/file/d/1nETaFnhobAAub9gF3ov5K1zL8RKXKxp8/view?usp=drive_link"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Dean's Honor List",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Spring Term 24-25",
+      image: require("./assets/images/aub.png"),
+     imageAlt: "AUB Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1NhFEU9p32_fsQD-Ts9bDoD4hkxvSEmtc/view?usp=drive_link"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Amazon University Engagement Industry Program 4.0",
+      subtitle:
+        "Completed the Amazon University Engagement Industry Program 4.0 in partnership with mentors from Amazon Women in Engineering Community ",
+      image: require("./assets/images/amazon.png"),
+      imageAlt: "Amazon Logo",
       footerLink: [
-        { name: "Certification", url: "" },
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1PWmY4tckxS-gI_f9RgKKxClALPr5WRwN/view?usp=drive_link"
         }
       ]
     }
@@ -437,8 +447,8 @@ const contactInfo = {
   title: "Contact Me",
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+961 81 917 649 | +20 ",
+  email_address: "bareajoudi@gmail.com"
 };
 
 // Twitter Section
